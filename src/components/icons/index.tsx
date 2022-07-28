@@ -2,6 +2,7 @@ import { Icon as BaseIcon, IconProps } from "components"
 import { MdContentCopy } from "react-icons/md"
 import { HiOutlineRefresh } from "react-icons/hi"
 import { BiDownload, BiPlusCircle, BiMinusCircle } from "react-icons/bi"
+import { BsPersonDash, BsPersonPlus } from "react-icons/bs"
 import { IoIosPaperPlane, IoMdPaperPlane, IoMdUndo } from "react-icons/io"
 import {
   IoWallet,
@@ -16,6 +17,7 @@ import {
   FaRegAddressBook,
   FaCheck,
   FaCheckCircle,
+  FaLink,
   FaUserCircle,
   FaTimes,
   FaTimesCircle,
@@ -163,4 +165,16 @@ export function MinusCircleIcon(props: IconProps) {
 
 export function PlusCircleIcon(props: IconProps) {
   return <Icon as={BiPlusCircle} {...props} />
+}
+
+export function UserMinusIcon(props: IconProps) {
+  return <Icon as={BsPersonDash} {...props} />
+}
+
+export function UserPlusIcon(props: IconProps) {
+  return <Icon as={BsPersonPlus} {...props} />
+}
+
+export function LinkIcon(props: IconProps) {
+  return <Icon as={FaLink} {...props} />
 }
